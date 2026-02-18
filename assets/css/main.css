@@ -1446,4 +1446,15 @@ body.darkmode .view-more-block .btn.btn-outline:hover {
         gap: 20px;
     }
 }
+
+#scroll-line {
+    border: none;
+    border-bottom: 3px solid #9b6500;
+    width: 90%;
+    max-width: 1140px;
+    margin: 55px auto;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: all 1s ease;
+}
 /* css end */
