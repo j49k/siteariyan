@@ -270,15 +270,17 @@
         </section>
         <!-- CTA -->
 
-<hr id="scroll-line" style="border: none; border-bottom: 3px solid #9b6500; width: 1300px; margin: 55px auto; opacity: 0; transform: scaleX(0); transition: all 1s ease;">
+<hr id="scroll-line" style="border: none; border-bottom: 3px solid #9b6500; width: 90%; max-width: 1140px; margin: 55px auto; opacity: 0; transform: scaleX(0); transform-origin: center; transition: all 1s ease;">
 
 <script>
   window.addEventListener('scroll', function() {
     const line = document.getElementById('scroll-line');
-    const rect = line.getBoundingClientRect();
-    if(rect.top < window.innerHeight * 0.9) {  // این قسمت رو طوری طراحی کردم که هر وقت 90 درصد سایت دیده شد اون خط نمایان بشه
-      line.style.opacity = 1;
-      line.style.transform = 'scaleX(1)';
+    if (line) {
+      const rect = line.getBoundingClientRect();
+      if(rect.top < window.innerHeight * 0.9) {
+        line.style.opacity = "1";
+        line.style.transform = "scaleX(1)";
+      }
     }
   });
 </script>
